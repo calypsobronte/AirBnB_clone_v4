@@ -16,8 +16,6 @@ header .logo {
     border-radius: 50%;
     height: 40px;
     width: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 #api_status.available{
