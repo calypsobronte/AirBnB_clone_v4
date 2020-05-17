@@ -1,11 +1,11 @@
 $(document).ready(function () {
-let new_amenity = {};
+  const NewAmenity = {};
   $('input[type=checkbox]').click(function () {
     if (this.checked) {
-      new_amenity[$(this).data('id')] = $(this).data('name');
-    }else {
-      delete new_amenity[$(this).data('id')];
+      NewAmenity[$(this).data('id')] = $(this).data('name');
+    } else {
+      delete NewAmenity[$(this).data('id')];
     }
-  	$('.amenities h4').text(Object.values(new_amenity).join(', '));
+    $('.amenities h4').text(Object.values(NewAmenity).join(', '));
   });
 });
